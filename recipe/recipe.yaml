@@ -1,7 +1,7 @@
 context:
   name: mxml
-  version: "2.0.1"
-  sha256: 67790de3d2faef1c59ecb55559de7aee5d2b710911b58254b6e28ac510190441
+  version: "2.0.2"
+  sha256: fb0720c8b1927dbdcb1e6bf9cdf662ef14f0ab6d3f9891ceba74b9913fad4540
   build_number: 0
 
 package:
