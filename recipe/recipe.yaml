@@ -15,15 +15,15 @@ source:
 build:
   number: ${{ build_number }}
   script:
+    - sed -i 's|NAME fastfloat|NAME fast_float|' CMakeLists.txt
+    - sed -i 's|mxml STATIC|mxml SHARED|' CMakeLists.txt
     - if: unix
       then:
         - set -exo pipefail
-        - sed -i 's/mxml STATIC/mxml SHARED/' CMakeLists.txt
         - export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
         - cmake -S . -B build ${CMAKE_ARGS} -DBUILD_TESTING=OFF
         - cmake --build build --config Release --parallel ${CPU_COUNT}
-        - 
-          #ctest -V --test-dir build
+        - #ctest -V --test-dir build
         - cmake --install build
       else:
         - echo on
