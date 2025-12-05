@@ -1,4 +1,4 @@
-About zeem-feedstock
+About mxml-feedstock
 ====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mxml-feedstock/blob/main/LICENSE.txt)
@@ -89,53 +89,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-zeem-green.svg)](https://anaconda.org/conda-forge/zeem) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/zeem.svg)](https://anaconda.org/conda-forge/zeem) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/zeem.svg)](https://anaconda.org/conda-forge/zeem) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/zeem.svg)](https://anaconda.org/conda-forge/zeem) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mxml-green.svg)](https://anaconda.org/conda-forge/mxml) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mxml.svg)](https://anaconda.org/conda-forge/mxml) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mxml.svg)](https://anaconda.org/conda-forge/mxml) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mxml.svg)](https://anaconda.org/conda-forge/mxml) |
 
-Installing zeem
+Installing mxml
 ===============
 
-Installing `zeem` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `mxml` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `zeem` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `mxml` can be installed with `conda`:
 
 ```
-conda install zeem
-```
-
-or with `mamba`:
-
-```
-mamba install zeem
-```
-
-It is possible to list all of the versions of `zeem` available on your platform with `conda`:
-
-```
-conda search zeem --channel conda-forge
+conda install mxml
 ```
 
 or with `mamba`:
 
 ```
-mamba search zeem --channel conda-forge
+mamba install mxml
+```
+
+It is possible to list all of the versions of `mxml` available on your platform with `conda`:
+
+```
+conda search mxml --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search mxml --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search zeem --channel conda-forge
+mamba repoquery search mxml --channel conda-forge
 
-# List packages depending on `zeem`:
-mamba repoquery whoneeds zeem --channel conda-forge
+# List packages depending on `mxml`:
+mamba repoquery whoneeds mxml --channel conda-forge
 
-# List dependencies of `zeem`:
-mamba repoquery depends zeem --channel conda-forge
+# List dependencies of `mxml`:
+mamba repoquery depends mxml --channel conda-forge
 ```
 
 
@@ -180,17 +180,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating zeem-feedstock
+Updating mxml-feedstock
 =======================
 
-If you would like to improve the zeem recipe or build a new
+If you would like to improve the mxml recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/zeem-feedstock are
+Note that all branches in the conda-forge/mxml-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
