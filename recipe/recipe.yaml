@@ -23,7 +23,7 @@ build:
         - export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
         - |
           if [[ "$build_platform" != "$target_platform" ]]; then
-              EXTRA_CMAKE_ARGS="-DTEST_STD_CHRONO_FROM_STREAM_R=0"
+              EXTRA_CMAKE_ARGS="-D_CXX_ATOMIC_BUILTIN_EXITCODE=0 -DTEST_STD_CHRONO_FROM_STREAM_R=0"
           fi
         - cmake -S . -B build ${CMAKE_ARGS} ${EXTRA_CMAKE_ARGS} -DBUILD_TESTING=OFF
         - cmake --build build --config Release --parallel ${CPU_COUNT}
