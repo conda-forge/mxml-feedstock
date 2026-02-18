@@ -1,8 +1,8 @@
 context:
   name: mxml
-  version: "2.0.4"
-  sha256: 06e1ff2ee662b250162e5510cb5f7ddee6ce2eb4a42b9e267f0f22ca7b857f7c
-  build_number: 2
+  version: "2.1.2"
+  sha256: 548c1c133cb6cfd726a5613b6840e04a6cb7ba101e48ca0b935586a7f314611c
+  build_number: 0
 
 package:
   name: ${{ name }}
